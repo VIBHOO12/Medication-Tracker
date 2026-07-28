@@ -52,7 +52,8 @@ public class LabReportController {
             Path targetLocation = this.fileStorageLocation.resolve(fileName);
             Files.copy(file.getInputStream(), targetLocation, StandardCopyOption.REPLACE_EXISTING);
             
-            String fileUrl = "http://localhost:8080/files/view/reports/" + fileName;
+            // String fileUrl = "http://localhost:8080/files/view/reports/" + fileName;
+            String fileUrl = "https://medication-tracker-xphw.onrender.com/files/view/reports/" + fileName;
 
             LabReport report = new LabReport();
             report.setFileName(file.getOriginalFilename());
