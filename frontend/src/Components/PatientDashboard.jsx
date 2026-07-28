@@ -62,7 +62,7 @@ export default function PatientDashboard({ user, logout }) {
         api.get("/appointments/my-patient"),
         api.get("/prescriptions/my"),
         api.get("/pharmacy/my-orders"),
-        api.get("/medication/my")
+        api.get("/medication/today")
       ]);
 
       setSummary({
