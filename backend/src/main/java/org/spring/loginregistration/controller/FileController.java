@@ -36,7 +36,9 @@ public class FileController {
             String fileName = UUID.randomUUID().toString() + "_" + file.getOriginalFilename();
             Path targetLocation = this.fileStorageLocation.resolve(fileName);
             Files.copy(file.getInputStream(), targetLocation, StandardCopyOption.REPLACE_EXISTING);
-            return ResponseEntity.ok("http://localhost:8080/files/view/" + fileName);
+            // return ResponseEntity.ok("http://localhost:8080/files/view/" + fileName);
+            return ResponseEntity.ok("https://medication-tracker-xphw.onrender.com/files/view/" + fileName);
+            
         } catch (IOException ex) {
             throw new RuntimeException("Could not store file.", ex);
         }
