@@ -18,7 +18,7 @@ A web application that helps users manage and track their medications efficientl
 
 ## Live Demo
 
-🔗 https://medication-tracker-rmbtz5mid-vibhoo-s-projects.vercel.app
+🔗 https://medication-tracker-ruby.vercel.app/
 
 > Note: Currently, only the frontend is deployed. Backend services are not deployed yet, so some features may not work as expected.
 
